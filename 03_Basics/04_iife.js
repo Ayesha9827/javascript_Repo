@@ -17,3 +17,9 @@
 })("Ashu")
  //To remove th epollution of global scope 
  //we use iife function
+
+
+//JavaScript Execution Context
+ //Global Execution context
+ //function Execution context
+ //Eval Execution Context
