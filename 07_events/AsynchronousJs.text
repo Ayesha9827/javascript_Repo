@@ -1,0 +1,23 @@
+JavaScript(default-js)
+=>Synchronous
+=>Sibgle threaded
+
+Execution Context
+=>execute one line of code at a timestamp
+=> console log - 1
+=> console log - 2      
+|
+|
+V   CALL STACK      MEMORY HEAP
+
+//Each execution  waits for the last one to complete before executing
+
+BLOCKING CODE    VS   NON BLOCKING CODE
+     |                       |
+     |                       |
+     V                       V
+Block the flow of      Doesn't block execution
+   Program                   |
+     |                       |
+     V                       V
+Read File system          Read File system
