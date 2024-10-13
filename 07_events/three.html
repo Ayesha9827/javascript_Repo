@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JAVASCRIPT</h1>
+    <button><span id="stop">Stop</span></button>
+    <button><span id="start">Start</span></button>
+</body>
+<script>
+    let setin
+    const date = function (str) {
+        console.log(str,Date.now()); 
+    }
+    document.querySelector("#start").addEventListener('click',function(){
+        console.log("Start");
+        if(!setin){//when set null after clearance found any error
+            setin = setInterval(date,2000,'Hi');
+            //we can pass 3rd value as parameter as well
+        }
+    })
+
+    document.querySelector("#stop").addEventListener('click',function(){
+        console.log("Stopped");
+        clearInterval(setin);
+        setin = null;
+    })
+</script>
+</html>
